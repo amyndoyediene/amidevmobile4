@@ -1,5 +1,4 @@
-import 'package:amimobile4/pages/acceuil2.dart';
-import 'package:amimobile4/pages/inscription.dart';
+import 'package:amimobile4/pages/listepage.dart';
 import 'package:flutter/material.dart';
 
 void main() {
@@ -10,12 +9,12 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      home: HomePage(),
+      home: Valider(),
     );
   }
 }
 
-class HomePage extends StatelessWidget {
+class Valider extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -38,7 +37,7 @@ class HomePage extends StatelessWidget {
                 ),
                 image: DecorationImage(
                   image: AssetImage(
-                      'assets/ami4.jpeg'), // Assurez-vous que votre image est dans le dossier assets
+                      'assets/inscri.png'), // Assurez-vous que votre image est dans le dossier assets
                   fit: BoxFit.cover,
                 ),
               ),
@@ -47,7 +46,7 @@ class HomePage extends StatelessWidget {
           SizedBox(height: 20), // Espacement sous l'image
           // Texte en dessous de l'image
           Text(
-            'Build the future by completing task',
+            'Incription reussi',
             style: TextStyle(
               color: Colors.white,
               fontSize: 18,
@@ -61,10 +60,9 @@ class HomePage extends StatelessWidget {
             child: ElevatedButton(
               onPressed: () {
                 // Action quand on appuie sur le bouton
-                // Navigation vers une nouvelle page
                 Navigator.push(
                   context,
-                  MaterialPageRoute(builder: (context) => InscriptionPage()),
+                  MaterialPageRoute(builder: (context) => TaskListPage()),
                 );
               },
               style: ElevatedButton.styleFrom(
@@ -75,7 +73,7 @@ class HomePage extends StatelessWidget {
                 ),
               ),
               child: Text(
-                'GET STARTED',
+                'se connecter',
                 style: TextStyle(
                   fontSize: 18,
                   color: Colors.white,

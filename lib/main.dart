@@ -3,6 +3,7 @@ import 'package:amimobile4/pages/acceuil2.dart';
 import 'package:amimobile4/pages/listepage.dart';
 import 'package:amimobile4/pages/updatepage.dart';
 import 'package:amimobile4/pages/contentpage.dart';
+import 'package:amimobile4/pages/inscription.dart';
 import 'package:flutter/material.dart';
 
 void main() => runApp(MyApp());
@@ -25,9 +26,10 @@ class MyApp extends StatelessWidget {
         '/listepage': (context) => TaskListPage(),
           '/contentpage': (context) => CreateTaskPage(),
           '/updatepage': (context) => updatePage(),
+          '/inscription': (context) => InscriptionPage(),
         // '/formulaire': (context) => Home(),
         //  '/contactList': (context) => ContactList(),
       },
     );
   }
-}
+} 
